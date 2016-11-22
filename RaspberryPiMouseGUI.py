@@ -21,7 +21,7 @@ import RTC
 import OpenRTM_aist
 import threading
 
-from PyQt4 import QtCore, QtGui
+from PyQt4 import QtGui
 import RaspberryPiMouseGUIUtil
 import math
 
@@ -453,7 +453,7 @@ def MyModuleInit(manager):
     RaspberryPiMouseGUIInit(manager)
 
     # Create a component
-    comp = manager.createComponent("RaspberryPiMouseGUI")
+    manager.createComponent("RaspberryPiMouseGUI")
 
 def main():
 	mgr = OpenRTM_aist.Manager.init(sys.argv)

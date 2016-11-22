@@ -8,7 +8,7 @@
 
 from PyQt4 import QtCore, QtGui
 import math
-import sys
+
 
 
 
@@ -172,17 +172,17 @@ class Robot:
 	# @return ロボットの描画サイズ
 	def getScale(self):
 		width = self.parent.width()
-		height = self.parent.height()
+		#height = self.parent.height()
 		
 		line_num = self.parent.default_line_num/self.parent.scale
 		return width/line_num
 
-        ##
+	##
 	# @brief ロボットを描画する
 	# @param self
 	def drawRobot(self):
-		width = self.parent.width()
-		height = self.parent.height()
+		#width = self.parent.width()
+		#height = self.parent.height()
 
 		
 		gridscale = self.getScale()
